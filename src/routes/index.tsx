@@ -118,7 +118,7 @@ function Index() {
           aria-hidden="true"
           width={784}
           height={1712}
-          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.12] object-cover opacity-95 -translate-y-[6%]"
+          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.1] object-cover opacity-95"
         />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_0%,transparent_10%,oklch(0.05_0.03_275/0.55)_60%,oklch(0.04_0.02_275/0.9)_100%)]" />
 
@@ -154,7 +154,7 @@ function Index() {
           </div>
 
           {/* Heading */}
-          <div className="mt-[86px] text-center">
+          <div className="mt-[96px] text-center">
             <h1 className="text-gradient-heading text-[30px] font-extrabold leading-tight tracking-tight drop-shadow-[0_0_22px_oklch(0.55_0.2_280/0.55)]">
               Verify to Earn Gems
             </h1>
