@@ -118,7 +118,7 @@ function Index() {
           aria-hidden="true"
           width={784}
           height={1712}
-          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.1] translate-y-[4%] object-cover opacity-95"
+          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.1] translate-y-[9%] object-cover opacity-95"
         />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_0%,transparent_10%,oklch(0.05_0.03_275/0.55)_60%,oklch(0.04_0.02_275/0.9)_100%)]" />
 
