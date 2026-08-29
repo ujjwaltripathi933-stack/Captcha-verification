@@ -118,7 +118,7 @@ function Index() {
           aria-hidden="true"
           width={784}
           height={1712}
-          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.1] object-cover opacity-95"
+          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.05] -translate-y-[7%] object-cover opacity-95"
         />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_0%,transparent_10%,oklch(0.05_0.03_275/0.55)_60%,oklch(0.04_0.02_275/0.9)_100%)]" />
 
@@ -154,7 +154,7 @@ function Index() {
           </div>
 
           {/* Heading */}
-          <div className="mt-[96px] text-center">
+          <div className="mt-[142px] text-center">
             <h1 className="text-gradient-heading text-[30px] font-extrabold leading-tight tracking-tight drop-shadow-[0_0_22px_oklch(0.55_0.2_280/0.55)]">
               Verify to Earn Gems
             </h1>
@@ -249,12 +249,10 @@ function Index() {
           <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
             <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-[oklch(0.16_0.06_285)] shadow-[0_0_30px_oklch(0.55_0.22_295/0.7)]">
               <div className="flex h-[58px] w-[58px] items-center justify-center rounded-full border border-[oklch(0.6_0.22_300/0.6)] bg-[oklch(0.11_0.05_282)]">
-                <div className="flex h-[46px] w-[46px] items-center justify-center overflow-hidden rounded-full bg-[linear-gradient(150deg,oklch(0.55_0.22_290),oklch(0.35_0.16_295))] shadow-[inset_0_1px_0_oklch(1_0_0/0.35)]">
-                  <img
-                    src={veloop.url}
-                    alt="Veloop rewards"
-                    className="h-[34px] w-[34px] rounded-full object-cover mix-blend-screen"
-                  />
+                <div className="flex h-[46px] w-[46px] items-center justify-center overflow-hidden rounded-full bg-[linear-gradient(150deg,oklch(0.6_0.23_292),oklch(0.33_0.15_295))] shadow-[inset_0_1px_0_oklch(1_0_0/0.4),inset_0_-2px_6px_oklch(0.2_0.1_290/0.7)]">
+                  <span className="text-[22px] font-extrabold leading-none text-white drop-shadow-[0_1px_3px_oklch(0.2_0.1_290/0.9)]">
+                    V
+                  </span>
                 </div>
               </div>
             </div>
