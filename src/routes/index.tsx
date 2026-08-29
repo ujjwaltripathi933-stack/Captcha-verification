@@ -233,8 +233,8 @@ function Index() {
         </div>
 
         {/* Bottom nav */}
-        <nav className="absolute inset-x-0 bottom-0 h-[78px] border-t border-white/10 bg-[oklch(0.09_0.03_275/0.85)] backdrop-blur-xl">
-          <div className="grid h-full grid-cols-5 items-center px-2 pb-2">
+        <nav className="absolute inset-x-0 bottom-0 h-[94px] rounded-t-[26px] border-t border-white/10 bg-[oklch(0.09_0.03_275/0.85)] backdrop-blur-xl">
+          <div className="grid h-full grid-cols-5 items-center px-2 pb-5">
             <NavItem icon={<LayoutGrid size={19} strokeWidth={2} />} label="Dashboard" />
             <NavItem
               icon={<Gem size={19} fill="currentColor" strokeWidth={2} />}
@@ -246,13 +246,15 @@ function Index() {
             <NavItem icon={<User size={19} strokeWidth={2} />} label="Profile" />
           </div>
 
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-            <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-[oklch(0.16_0.06_285)] shadow-[0_0_30px_oklch(0.55_0.22_295/0.7)]">
-              <div className="flex h-[58px] w-[58px] items-center justify-center rounded-full border border-[oklch(0.6_0.22_300/0.6)] bg-[oklch(0.11_0.05_282)]">
-                <div className="flex h-[46px] w-[46px] items-center justify-center overflow-hidden rounded-full bg-[linear-gradient(150deg,oklch(0.6_0.23_292),oklch(0.33_0.15_295))] shadow-[inset_0_1px_0_oklch(1_0_0/0.4),inset_0_-2px_6px_oklch(0.2_0.1_290/0.7)]">
-                  <span className="text-[22px] font-extrabold leading-none text-white drop-shadow-[0_1px_3px_oklch(0.2_0.1_290/0.9)]">
-                    V
-                  </span>
+          <div className="absolute left-1/2 top-[26px] -translate-x-1/2 -translate-y-1/2">
+            <div className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-[oklch(0.09_0.03_275/0.9)] shadow-[0_0_34px_oklch(0.55_0.22_295/0.65)]">
+              <div className="flex h-[62px] w-[62px] items-center justify-center rounded-full bg-[linear-gradient(150deg,oklch(0.72_0.18_235),oklch(0.55_0.24_300))] p-[3px]">
+                <div className="flex h-full w-full items-center justify-center rounded-full bg-[oklch(0.1_0.05_282)] p-[3px]">
+                  <div className="flex h-full w-full items-center justify-center rounded-full bg-[radial-gradient(120%_120%_at_30%_20%,oklch(0.68_0.24_300),oklch(0.34_0.16_295))] shadow-[inset_0_1px_0_oklch(1_0_0/0.45),inset_0_-3px_8px_oklch(0.18_0.09_290/0.8)]">
+                    <span className="text-[24px] font-extrabold leading-none text-white drop-shadow-[0_1px_4px_oklch(0.2_0.1_290/0.9)]">
+                      V
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
