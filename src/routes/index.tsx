@@ -16,7 +16,7 @@ import {
   BatteryFull,
 } from "lucide-react";
 import bg from "@/assets/crypto-bg.jpg";
-import veloop from "@/assets/veloop-logo.jpeg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -83,7 +83,7 @@ function Captcha() {
           opacity="0.4"
         />
       ))}
-      <g fill="#0d0c14" fontFamily="Georgia, 'Times New Roman', serif" fontSize="58" fontWeight="700">
+      <g fill="#0d0c14" fontFamily="'Arial Black', Helvetica, Arial, sans-serif" fontSize="56" fontWeight="900">
         {"H2HB9U".split("").map((ch, i) => (
           <text
             key={i}
@@ -118,7 +118,7 @@ function Index() {
           aria-hidden="true"
           width={784}
           height={1712}
-          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.1] object-cover opacity-95"
+          className="pointer-events-none absolute inset-0 h-full w-full scale-[1.1] translate-y-[12%] object-cover opacity-95"
         />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_0%,transparent_10%,oklch(0.05_0.03_275/0.55)_60%,oklch(0.04_0.02_275/0.9)_100%)]" />
 
@@ -154,8 +154,8 @@ function Index() {
           </div>
 
           {/* Heading */}
-          <div className="mt-[96px] text-center">
-            <h1 className="text-gradient-heading text-[30px] font-extrabold leading-tight tracking-tight drop-shadow-[0_0_22px_oklch(0.55_0.2_280/0.55)]">
+          <div className="mt-[122px] text-center">
+            <h1 className="text-gradient-heading text-[29px] font-extrabold leading-tight tracking-tight drop-shadow-[0_0_22px_oklch(0.55_0.2_280/0.55)]">
               Verify to Earn Gems
             </h1>
             <p className="mt-1.5 text-[12.5px] text-white/70">
@@ -164,30 +164,30 @@ function Index() {
           </div>
 
           {/* Card */}
-          <section className="mt-5 rounded-[23px] bg-card-soft p-5 shadow-[0_25px_60px_-15px_oklch(0.4_0.2_290/0.55)]">
-            <div className="flex items-center justify-center gap-2">
-              <Shield size={15} className="text-neon-violet" strokeWidth={2.5} />
-              <h2 className="text-[15px] font-bold text-ink">CAPTCHA Verification</h2>
+          <section className="mx-auto mt-4 w-[300px] rounded-[23px] bg-card-soft p-[18px] shadow-[0_25px_60px_-15px_oklch(0.4_0.2_290/0.55)]">
+            <div className="flex items-center justify-center gap-1.5">
+              <Shield size={14} className="text-neon-violet" strokeWidth={2.5} />
+              <h2 className="text-[14.5px] font-bold text-ink">CAPTCHA Verification</h2>
             </div>
             <p className="mt-1 text-center text-[10.5px] text-ink/50">
               Please select the correct code shown below
             </p>
 
             <div className="relative mt-3">
-              <div className="h-[86px] overflow-hidden rounded-[12px] border border-black/5">
+              <div className="h-[74px] overflow-hidden rounded-[10px] border border-black/5">
                 <Captcha />
               </div>
-              <span className="absolute -bottom-3 -right-1 flex h-7 w-7 items-center justify-center rounded-full bg-[oklch(0.72_0.16_165)] shadow-[0_4px_14px_oklch(0.72_0.16_165/0.6)]">
-                <Check size={15} className="text-white" strokeWidth={3} />
+              <span className="absolute -bottom-2.5 -right-1.5 flex h-[26px] w-[26px] items-center justify-center rounded-full bg-[oklch(0.72_0.16_165)] shadow-[0_4px_14px_oklch(0.72_0.16_165/0.6)]">
+                <Check size={14} className="text-white" strokeWidth={3} />
               </span>
             </div>
 
-            <div className="mt-5 flex items-center justify-center gap-1.5">
+            <div className="mt-4 flex items-center justify-center gap-1.5">
               <RefreshCw size={11} className="text-ink/40" strokeWidth={2.5} />
               <span className="text-[10.5px] text-ink/45">Refresh CAPTCHA</span>
             </div>
 
-            <p className="mt-4 text-[11px] font-bold text-ink">Select the matching code</p>
+            <p className="mt-3.5 text-[11px] font-bold text-ink">Select the matching code</p>
 
             <div className="mt-2 grid grid-cols-2 gap-2.5">
               {OPTIONS.map((code) => {
@@ -198,8 +198,8 @@ function Index() {
                     onClick={() => setSelected(code)}
                     className={
                       active
-                        ? "relative flex h-[46px] items-center justify-center gap-2 rounded-[11px] border-2 border-[oklch(0.6_0.22_300)] bg-[oklch(0.96_0.03_305)] text-[13px] font-bold text-ink shadow-[0_0_14px_oklch(0.6_0.22_300/0.35)]"
-                        : "flex h-[46px] items-center justify-center rounded-[11px] border border-black/5 bg-[oklch(0.945_0.004_285)] text-[13px] font-bold text-ink"
+                        ? "relative flex h-[42px] items-center justify-center gap-1.5 rounded-[11px] border-2 border-[oklch(0.6_0.22_300)] bg-[oklch(0.96_0.03_305)] text-[12.5px] font-bold text-ink shadow-[0_0_14px_oklch(0.6_0.22_300/0.35)]"
+                        : "flex h-[42px] items-center justify-center rounded-[11px] border border-black/5 bg-[oklch(0.945_0.004_285)] text-[12.5px] font-bold text-ink"
                     }
                   >
                     {code}
@@ -213,7 +213,7 @@ function Index() {
               })}
             </div>
 
-            <button className="btn-cta-gradient mt-4 flex h-[50px] w-full items-center rounded-[13px] px-4">
+            <button className="btn-cta-gradient mt-3.5 flex h-[46px] w-full items-center rounded-[13px] px-3.5">
               <Gem size={16} className="text-white" fill="currentColor" />
               <span className="flex-1 text-center text-[14px] font-bold text-white">
                 Verify &amp; Claim Gems
@@ -233,8 +233,8 @@ function Index() {
         </div>
 
         {/* Bottom nav */}
-        <nav className="absolute inset-x-0 bottom-0 h-[78px] border-t border-white/10 bg-[oklch(0.09_0.03_275/0.85)] backdrop-blur-xl">
-          <div className="grid h-full grid-cols-5 items-center px-2 pb-2">
+        <nav className="absolute inset-x-0 bottom-0 h-[94px] rounded-t-[26px] border-t border-white/10 bg-[oklch(0.09_0.03_275/0.85)] backdrop-blur-xl">
+          <div className="grid h-full grid-cols-5 items-center px-2 pb-5">
             <NavItem icon={<LayoutGrid size={19} strokeWidth={2} />} label="Dashboard" />
             <NavItem
               icon={<Gem size={19} fill="currentColor" strokeWidth={2} />}
@@ -246,15 +246,15 @@ function Index() {
             <NavItem icon={<User size={19} strokeWidth={2} />} label="Profile" />
           </div>
 
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-            <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-[oklch(0.16_0.06_285)] shadow-[0_0_30px_oklch(0.55_0.22_295/0.7)]">
-              <div className="flex h-[58px] w-[58px] items-center justify-center rounded-full border border-[oklch(0.6_0.22_300/0.6)] bg-[oklch(0.11_0.05_282)]">
-                <div className="flex h-[46px] w-[46px] items-center justify-center overflow-hidden rounded-full bg-[linear-gradient(150deg,oklch(0.55_0.22_290),oklch(0.35_0.16_295))] shadow-[inset_0_1px_0_oklch(1_0_0/0.35)]">
-                  <img
-                    src={veloop.url}
-                    alt="Veloop rewards"
-                    className="h-[34px] w-[34px] rounded-full object-cover mix-blend-screen"
-                  />
+          <div className="absolute left-1/2 top-[26px] -translate-x-1/2 -translate-y-1/2">
+            <div className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-[oklch(0.09_0.03_275/0.9)] shadow-[0_0_34px_oklch(0.55_0.22_295/0.65)]">
+              <div className="flex h-[62px] w-[62px] items-center justify-center rounded-full bg-[linear-gradient(150deg,oklch(0.72_0.18_235),oklch(0.55_0.24_300))] p-[3px]">
+                <div className="flex h-full w-full items-center justify-center rounded-full bg-[oklch(0.1_0.05_282)] p-[3px]">
+                  <div className="flex h-full w-full items-center justify-center rounded-full bg-[radial-gradient(120%_120%_at_30%_20%,oklch(0.68_0.24_300),oklch(0.34_0.16_295))] shadow-[inset_0_1px_0_oklch(1_0_0/0.45),inset_0_-3px_8px_oklch(0.18_0.09_290/0.8)]">
+                    <span className="text-[24px] font-extrabold leading-none text-white drop-shadow-[0_1px_4px_oklch(0.2_0.1_290/0.9)]">
+                      V
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
