@@ -83,11 +83,11 @@ function Captcha() {
           opacity="0.4"
         />
       ))}
-      <g fill="#0d0c14" fontFamily="Georgia, 'Times New Roman', serif" fontSize="52" fontWeight="700">
+      <g fill="#0d0c14" fontFamily="Georgia, 'Times New Roman', serif" fontSize="58" fontWeight="700">
         {"H2HB9U".split("").map((ch, i) => (
           <text
             key={i}
-            x={30 + i * 44}
+            x={22 + i * 47}
             y={66}
             transform={`rotate(${[-9, 6, -4, 9, -7, 5][i]} ${30 + i * 44} 58) skewX(${[6, -8, 4, -5, 7, -6][i]})`}
           >
@@ -118,7 +118,7 @@ function Index() {
           aria-hidden="true"
           width={784}
           height={1712}
-          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-95"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover object-[50%_38%] opacity-95"
         />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_0%,transparent_10%,oklch(0.05_0.03_275/0.55)_60%,oklch(0.04_0.02_275/0.9)_100%)]" />
 
@@ -154,7 +154,7 @@ function Index() {
           </div>
 
           {/* Heading */}
-          <div className="mt-14 text-center">
+          <div className="mt-16 text-center">
             <h1 className="text-gradient-heading text-[30px] font-extrabold leading-tight tracking-tight drop-shadow-[0_0_22px_oklch(0.55_0.2_280/0.55)]">
               Verify to Earn Gems
             </h1>
@@ -164,7 +164,7 @@ function Index() {
           </div>
 
           {/* Card */}
-          <section className="mt-4 rounded-[23px] bg-card-soft p-4 shadow-[0_25px_60px_-15px_oklch(0.4_0.2_290/0.55)]">
+          <section className="mt-5 rounded-[23px] bg-card-soft p-5 shadow-[0_25px_60px_-15px_oklch(0.4_0.2_290/0.55)]">
             <div className="flex items-center justify-center gap-2">
               <Shield size={15} className="text-neon-violet" strokeWidth={2.5} />
               <h2 className="text-[15px] font-bold text-ink">CAPTCHA Verification</h2>
@@ -174,7 +174,7 @@ function Index() {
             </p>
 
             <div className="relative mt-3">
-              <div className="h-[72px] overflow-hidden rounded-[12px] border border-black/5">
+              <div className="h-[86px] overflow-hidden rounded-[12px] border border-black/5">
                 <Captcha />
               </div>
               <span className="absolute -bottom-3 -right-1 flex h-7 w-7 items-center justify-center rounded-full bg-[oklch(0.72_0.16_165)] shadow-[0_4px_14px_oklch(0.72_0.16_165/0.6)]">
@@ -198,8 +198,8 @@ function Index() {
                     onClick={() => setSelected(code)}
                     className={
                       active
-                        ? "relative flex h-[42px] items-center justify-center gap-2 rounded-[11px] border-2 border-[oklch(0.6_0.22_300)] bg-[oklch(0.96_0.03_305)] text-[13px] font-bold text-ink shadow-[0_0_14px_oklch(0.6_0.22_300/0.35)]"
-                        : "flex h-[42px] items-center justify-center rounded-[11px] border border-black/5 bg-[oklch(0.945_0.004_285)] text-[13px] font-bold text-ink"
+                        ? "relative flex h-[46px] items-center justify-center gap-2 rounded-[11px] border-2 border-[oklch(0.6_0.22_300)] bg-[oklch(0.96_0.03_305)] text-[13px] font-bold text-ink shadow-[0_0_14px_oklch(0.6_0.22_300/0.35)]"
+                        : "flex h-[46px] items-center justify-center rounded-[11px] border border-black/5 bg-[oklch(0.945_0.004_285)] text-[13px] font-bold text-ink"
                     }
                   >
                     {code}
@@ -213,7 +213,7 @@ function Index() {
               })}
             </div>
 
-            <button className="btn-cta-gradient mt-4 flex h-[48px] w-full items-center rounded-[13px] px-4">
+            <button className="btn-cta-gradient mt-4 flex h-[50px] w-full items-center rounded-[13px] px-4">
               <Gem size={16} className="text-white" fill="currentColor" />
               <span className="flex-1 text-center text-[14px] font-bold text-white">
                 Verify &amp; Claim Gems
