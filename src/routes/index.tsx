@@ -16,7 +16,7 @@ import {
   BatteryFull,
 } from "lucide-react";
 import bg from "@/assets/crypto-bg.jpg";
-import veloop from "@/assets/veloop-logo.jpeg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
